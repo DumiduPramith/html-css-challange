@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "roboto", "sans-serif";
+	margin: 0;
+}
+.container {
+	margin: 0 auto;
+	width: 1000px;
+	max-width: 100%;
+	/* text-align: center; */
+}
+nav {
+	display: flex;
+	align-items: center;
+	margin-top: 1rem;
+}
+nav a.active {
+	color: blue;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.row p {
+	color: blue;
+	font-weight: bold;
+	margin-top: -1rem;
+}
+.big {
+	margin-bottom: 1rem;
+	font-size: 2.5rem;
+}
+.small {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+.pre-con {
+	width: 100%;
+}
+.logo {
+	font-size: 3rem;
+	margin-right: 0.5rem;
+	margin-top: 1.5rem;
+}
+nav a {
+	text-decoration: none;
+	color: black;
+	margin-left: 2rem;
+}
+ul {
+	display: flex;
+	margin-top: -1rem;
+}
+
+li {
+	/* padding: 1rem; */
+	list-style: none;
+	font-weight: bold;
+}
+header {
+	background-image: url(./images/banner.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 300px;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+.mid-row {
+	display: flex;
+}
+
+.mid-col {
+	padding: 1rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+.mid-col img {
+	width: 100%;
+}
+
+.container button {
+	font-size: 2rem;
+	color: white;
+	background-color: #007ff4;
+	padding: 1rem;
+	border: none;
+}
+
+.text-center {
+	text-align: center;
+}
+@media screen and (max-width: 800px) {
+	.mid-row {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.mid-col {
+		max-width: 50%;
+	}
+	.hidden-mobile {
+		display: none;
+	}
+	nav {
+		margin-top: auto;
+	}
+	.row {
+		justify-content: center;
+	}
+	ul {
+		margin-top: 0;
+		margin-left: -5em;
+	}
+	.logo {
+		position: relative;
+		left: 5rem;
+	}
+}
